@@ -9,7 +9,7 @@ const server = express()
 const multiplyRouter = require('../routes/multiply.js')
 const documentation = require('../routes/documentation')
 const { rateLimiter } = require('../middleware/rateLimiter.js')
-const swaggerOptions = require('../swagger.js')
+const swaggerOptions = require('../../swagger.js')
 
 server.use(express.json())
 server.use(helmet())
