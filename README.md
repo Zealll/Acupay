@@ -32,7 +32,7 @@
     num2: 10
 }
 ```
-#### Response
+##### Response
 ##### 200 (OK)
 ##### JSON Response:
 ```
@@ -42,3 +42,8 @@
     total: 50
 }
 ```
+
+##### 400 (Number of keys in the object is less than, or more than 2)
+##### 415 (description: No Content-Type on Header, or media provided is not JSON)        
+##### 422 (description: Keys ["num1" and/or "num2"] are missing, or thir values are not integers)         
+##### 429: (description: Rate limit of 1 request per second has been reached)
