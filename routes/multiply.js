@@ -1,5 +1,4 @@
-const express = require('express')
-const router = express.Router()
+const router = require('express').Router()
 
 const {
     validateContentType,
@@ -7,6 +6,8 @@ const {
     validateTwoKeys,
     validateValueTypes
 } = require('../middleware/validation.js')
+
+
 
 router.post('/multiply', 
     validateContentType,
