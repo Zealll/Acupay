@@ -1,8 +1,19 @@
 const express = require('express')
 const router = express.Router()
 
+const {
+    validateContentType,
+    validateNumberOfKeys,
+    validateTwoKeys,
+    validateValueTypes
+} = require('../middleware/validation.js')
 
-router.post('/multiply', (req, res, next) => {
+router.post('/multiply', 
+    validateContentType,
+    validateNumberOfKeys,
+    validateTwoKeys,
+    validateValueTypes,
+    (req, res, next) => {
     let { num1, num2 } = req.body
     
     try {
