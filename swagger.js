@@ -13,7 +13,7 @@ const swaggerOptions = {
             servers: [url+port]
         }
     },
-    apis: ['./routes/documentation.js']
+    apis: ['./src/routes/documentation.js']
 }
 
 module.exports = swaggerOptions
