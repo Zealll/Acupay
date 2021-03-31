@@ -13,10 +13,10 @@
 
 #### Body
 
-| name    | type   | required |
-| --------| ------ | -------- |
-| `num1`  | String | Yes      |
-| `num2`  | String | Yes      |
+| name    | type    | required |
+| --------| ------  | -------- |
+| `num1`  | Integer | Yes      |
+| `num2`  | Integer | Yes      |
 
 #### Example
 
@@ -28,7 +28,7 @@
 ```
 #### Response
 ##### 200 (OK)
-##### JSON:
+##### JSON Response:
 ```
 {
     user_entry_one: 5,
