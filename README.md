@@ -7,6 +7,7 @@
 
 
 ===== Swagger Documentation =====
+
 *method url*: `/api/docs`
 
 
