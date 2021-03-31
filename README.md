@@ -5,7 +5,7 @@
 - start - runs server using node
 
 
-===== POST request for Mulriplication =====
+===== POST request for Multiplication =====
 ### **Multiply two Numbers**
 *method url*: `/api/multiply`
 
