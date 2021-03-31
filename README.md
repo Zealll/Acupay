@@ -5,6 +5,10 @@
 - start - runs server using node
 
 
+===== Swagger Documentation =====
+*method url*: `/api/docs`
+
+
 ===== POST request for Multiplication =====
 ### **Multiply two Numbers**
 *method url*: `/api/multiply`
