@@ -15,6 +15,7 @@
 ===== Documentation in JSON format =====
 
 *method url*: `/api/json_docs`
+
 *http method*: **[GET]**
 
 ===== POST request for Multiplication =====
