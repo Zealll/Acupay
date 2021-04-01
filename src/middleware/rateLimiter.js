@@ -7,6 +7,4 @@ const rateLimiter = limiter({
     header: true
 })
 
-module.exports = {
-    rateLimiter
-}
+module.exports = rateLimiter

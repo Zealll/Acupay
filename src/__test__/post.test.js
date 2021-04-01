@@ -12,12 +12,12 @@ describe('multiply', () => {
     })
 
     expect(response.status).toBe(200)
-    expect(response.body).toHaveProperty('user_entry_one')
-    expect(response.body).toHaveProperty('user_entry_two')
-    expect(response.body).toHaveProperty('total')
-    expect(response.body.user_entry_one).toBe(50)
-    expect(response.body.user_entry_two).toBe(100)
-    expect(response.body.total).toBe(5000)
+    expect(response.body.data).toHaveProperty('user_entry_one')
+    expect(response.body.data).toHaveProperty('user_entry_two')
+    expect(response.body.data).toHaveProperty('total')
+    expect(response.body.data.user_entry_one).toBe(50)
+    expect(response.body.data.user_entry_two).toBe(100)
+    expect(response.body.data.total).toBe(5000)
   })
   
   test('Should return 415 error for wrong content-type', async () => {
