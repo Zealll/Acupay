@@ -3,6 +3,7 @@
 ===== Scripts =====
 - dev - runs server using nodemon
 - start - runs server using node
+- test - runs unit test
 
 
 
