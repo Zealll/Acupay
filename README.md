@@ -12,6 +12,11 @@
 *method url*: `/api/docs`
 
 
+===== Documentation in JSON format =====
+
+*method url*: `/api/json_docs`
+*http method*: **[GET]**
+
 ===== POST request for Multiplication =====
 ### **Multiply two Numbers**
 *method url*: `/api/multiply`
