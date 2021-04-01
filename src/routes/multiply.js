@@ -18,11 +18,11 @@ router.post('/multiply',
     let { num1, num2 } = req.body
     
     try {
-        res.status(200).json({
+        res.status(200).json({data: {
             user_entry_one: num1,
             user_entry_two: num2,
             total: num1 * num2
-        })
+        }})
     } catch(error) {
         next(error)
     }
