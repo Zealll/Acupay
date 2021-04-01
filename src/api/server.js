@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const helmet = require('helmet')
 const cors = require('cors')
@@ -7,7 +8,6 @@ const swaggerJsDoc = require('swagger-jsdoc')
 const server = express()
 
 const multiplyRouter = require('../routes/multiply.js')
-const documentation = require('../routes/documentation')
 const { rateLimiter } = require('../middleware/rateLimiter.js')
 const swaggerOptions = require('../../swagger.js')
 
@@ -18,7 +18,7 @@ server.use(cors())
 const swaggerDoc = swaggerJsDoc(swaggerOptions)
 server.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerDoc))
 
-server.use(rateLimiter)
+process.env.DB_ENV != 'test' && server.use(rateLimiter)
 
 server.use('/api', multiplyRouter)
 server.use((err, req, res, next) => {
